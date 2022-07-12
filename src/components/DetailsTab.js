@@ -9,8 +9,10 @@ function DetailsTab() {
       <Row md={2}>
         {Object.keys(data.details).map((index) => (
           <div className="detail">
-            <FontAwesomeIcon icon={data.details[index].icon} />{" "}
-            {data.details[index].text}
+            <a href={data.details[index].link} className="customLink">
+              <FontAwesomeIcon icon={data.details[index].icon} />{" "}
+              {data.details[index].text}
+            </a>
           </div>
         ))}
       </Row>
