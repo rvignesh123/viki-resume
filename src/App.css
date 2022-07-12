@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+
+@media print { body { -webkit-print-color-adjust: exact; } }
+
+#header{
+  background-color: #313c4e;
+}
+body{
+  
+}
+#name{
+  font-size: 46px;
+  
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#image_holder{
+  max-width: 160px;
+  max-height: 160px;
+  width: 160px;
+  margin-right:16px;
+  margin-top:16px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#image_border{
+  max-width: 220px;
+  max-height: 220px;
+  width: 160px;
+  height: 160px;
+  border-width: 6px;
+  position: absolute;
+  border-style: solid;
+  overflow: hidden;
+  border-radius: 50%;
+  border-color: #449399;
+  background-color: #449399;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+#profile_image{
+  width: 160px !important;
+  height: 160px !important;
+  max-width: 160px;
+  background-color: #449399;
+  border-color: #449399;
+  border-radius: 50%;
+  max-height: 160px;
+  padding-left: 20px;
+  border-width: 6px;
+  -webkit-box-sizing: border-box;
+  overflow: hidden;
+}
+
+#image{
+  width:100%;
+  height: 100%;
+  background: url(/public/Vicky_Resume.jpg) no-repeat;
+  background-size: 100% 126%;
+}
+
+#position{
+  font-size: 24px;
+  color: #449399;
+}
+
+#header{
+  padding-top: 32px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+body{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+#tagline{
+  padding-left: 24px;
+  padding-top: 16px;
+  text-align: justify;
+  padding-right: 200px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+#detail_tab{
+  background-color: rgb(34, 42, 51);
+}
+
+.detail{
+  width: 300px;
+  margin: auto;
+  padding-top: 4px;
+  padding-bottom: 4px;
+}
+
+.skill{
+  color: white;
+  float: right;
+  width: auto;
+  background: #989da6;
+  margin-left: 8px;
+  margin-top: 8px;
+  border: 2px solid #989da6;
+  border-radius: 6px;
+  padding: 2px;
+  padding-right: 6px;
+  padding-left: 6px;
+  font-size: 12px;
+}
+
+#skills_tab{
+  padding-top: 12px;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.sectionTitle{
+  color: #449399;
+  margin-left: 2px;
+  text-decoration: underline;
+  font-size: 24px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 8px;
 }
