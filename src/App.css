@@ -124,5 +124,67 @@ body{
 
 .customLink{
   color: white;
-    text-decoration: none;
+  text-decoration: none;
+}
+
+#work_details_tab{
+  color: black;
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+}
+
+.timeline{
+  margin:0 !important;
+  padding:0 !important;
+}
+
+.timeline-item-dateinner{
+  background: #449399 !important;
+  font-size: 10px !important;
+  font-weight: normal !important;
+  line-height: 32px !important;
+  text-indent: 9px !important;
+  height: 32px !important;
+  width: 96% !important;
+}
+
+.timeline-item-date{
+  top: 0 !important;
+  height: 32px !important;
+}
+.timeline--wrapper{
+  padding: 0 !important;
+  padding-top: 8px !important;
+  padding-left: 12px !important;
+}
+
+.entry .title{
+  width: 140px !important;
+}
+
+.entry .body{
+  width: 545px !important;
+  margin: 0 !important;
+}
+
+.entry .title:before{
+  top: 9px !important;
+}
+
+.timeline:before{
+  left: 138px !important;
+}
+
+.timeline--wrapper h3{
+  font-weight: bold;
+}
+
+.activity{
+  text-align: justify;
+}
+.company_url{
+  margin-left: 4px;
+  color:black;
+  font-size: 14px;
 }

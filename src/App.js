@@ -9,6 +9,7 @@ import * as Icons from "@fortawesome/free-solid-svg-icons";
 import * as BrandIcons from "@fortawesome/free-brands-svg-icons";
 import DetailsTab from "./components/DetailsTab";
 import SkillsSection from "./components/SkillsSection";
+import WorkDetails from "./components/WorkDetails";
 var data = require("./data.json");
 
 const iconList = Object.keys(Icons)
@@ -43,6 +44,9 @@ function App() {
         </Row>
         <Row id="skills_tab">
           <SkillsSection />
+        </Row>
+        <Row id="work_details_tab">
+          <WorkDetails />
         </Row>
       </Container>
     </div>
