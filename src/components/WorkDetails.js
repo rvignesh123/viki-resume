@@ -1,18 +1,8 @@
 import Row from "react-bootstrap/Row";
-import Container from "react-bootstrap/Container";
 import { Timeline, TimelineItem } from "vertical-timeline-component-for-react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-var data = require("../work_details.json");
-const customTheme = {
-  yearColor: "#405b73",
-  lineColor: "#d0cdc4",
-  dotColor: "#262626",
-  borderDotColor: "#d0cdc4",
-  titleColor: "#405b73",
-  subtitleColor: "#bf9765",
-  textColor: "#262626",
-};
-function WorkDetails() {
+
+function WorkDetails({ data }) {
   const listItem = (itemIndex, timeIndex) => {
     const text = data.timeline[timeIndex].items[itemIndex];
     return (
@@ -22,7 +12,7 @@ function WorkDetails() {
             <br></br>
           </>
         ) : (
-          <li>{text}</li>
+          <li dangerouslySetInnerHTML={{ __html: text }}></li>
         )}
       </>
     );

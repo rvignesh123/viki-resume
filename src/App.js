@@ -1,16 +1,19 @@
-import logo from "./logo.svg";
 import "./App.css";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import * as Icons from "@fortawesome/free-solid-svg-icons";
 import * as BrandIcons from "@fortawesome/free-brands-svg-icons";
 import DetailsTab from "./components/DetailsTab";
 import SkillsSection from "./components/SkillsSection";
 import WorkDetails from "./components/WorkDetails";
+import OtherDetails from "./components/OtherDetails";
+import Credits from "./components/Credits";
 var data = require("./data.json");
+var interests = require("./interests.json");
+var languages = require("./languages.json");
+var workDetail = require("./work_details.json");
 
 const iconList = Object.keys(Icons)
   .filter((key) => key !== "fas" && key !== "prefix")
@@ -40,13 +43,31 @@ function App() {
           <Row id="tagline">{data.tagLine}</Row>
         </Row>
         <Row id="detail_tab">
-          <DetailsTab />
+          <DetailsTab data={data} />
         </Row>
         <Row id="skills_tab">
-          <SkillsSection />
+          <SkillsSection data={data} styleClass="sectionTitle" />
         </Row>
         <Row id="work_details_tab">
-          <WorkDetails />
+          <WorkDetails data={workDetail} />
+        </Row>
+        <Row className="section_container">
+          <OtherDetails />
+        </Row>
+        <Row id="interest_tab">
+          <SkillsSection
+            data={interests}
+            styleClass="sectionTitle sectionMinTitle"
+          />
+        </Row>
+        <Row id="languages_tab">
+          <SkillsSection
+            data={languages}
+            styleClass="sectionTitle sectionMinTitle"
+          />
+        </Row>
+        <Row id="credits">
+          <Credits data={languages} styleClass="sectionTitle sectionMinTitle" />
         </Row>
       </Container>
     </div>
