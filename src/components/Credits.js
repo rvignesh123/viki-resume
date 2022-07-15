@@ -4,7 +4,7 @@ import Row from "react-bootstrap/Row";
 function Credits({ data, styleClass }) {
   return (
     <Container>
-      <Row class="credits">
+      <p class="credits">
         This document is made with{" "}
         <FontAwesomeIcon
           icon="fa-solid fa-heart"
@@ -24,7 +24,7 @@ function Credits({ data, styleClass }) {
             icon="fa-brands fa-github"
           />
         </a>
-      </Row>
+      </p>
     </Container>
   );
 }
